@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-app-JVUtLYzcL0](https://www.frontendmentor.io/solutions/advice-generator-app-JVUtLYzcL0)
+- Live Site URL: [https://wat-advice-generator.vercel.app/](https://wat-advice-generator.vercel.app/)
 
 ## My process
 
@@ -69,5 +69,5 @@ I will continue to focus on improving my skills as a programmer, practicing more
 
 ## Author
 
-- Website - [Wallacy projects](https://github.com/wallacycaike?tab=repositories)
+- My Projects - [GitHub](https://github.com/wallacycaike?tab=repositories)
 - Frontend Mentor - [@wallacycaike](https://www.frontendmentor.io/profile/wallacycaike)
