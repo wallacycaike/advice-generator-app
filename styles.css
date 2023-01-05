@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 15px;
+}
+
+.advice {
+  max-width: 444px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+}
+
+picture {
+  margin: 0 25px;
+}
+
+img {
+  width: 100%;
+}
+
+.loading-message {
+  color: var(--Neon-Green);
+}
+
+#advice-id {
+  font-size: 10px;
+  color: var(--Neon-Green);
+  letter-spacing: 5px;
+}
+
+#advice-text {
+  font-size: 28px;
+  color: var(--Light-Cyan);
+}
+
+@media (max-width: 375px) {
+  #advice-id {
+    font-size: 8px;
+    letter-spacing: 5px;
+  }
+
+  #advice-text {
+    font-size: 20px;
+  }
+}
+
+.advice-button {
+  cursor: pointer;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  padding: 20px;
+  transform: translateY(30px);
+}
+
+.advice-button:hover {
+  box-shadow: 1px 1px 30px var(--Neon-Green);
+}
+
+.advice-button img {
+  display: block;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
