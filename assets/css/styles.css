@@ -48,10 +48,60 @@ main {
   justify-content: center;
   gap: 25px;
   text-align: center;
+  visibility: hidden;
+}
+
+.advice.visible {
+  visibility: visible;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: transparent;
+  border-radius: 1rem;
+
+  visibility: hidden;
+}
+
+.loader.visible {
+  visibility: visible;
+}
+
+.loader::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--Dark-Blue);
+  border-top-color: var(--Neon-Green);
+  animation: spin 1s linear infinite;
 }
 
 picture {
   margin: 0 25px;
+  visibility: hidden;
+}
+
+picture.visible {
+  visibility: visible;
 }
 
 img {
@@ -86,10 +136,18 @@ img {
 
 .advice-button {
   cursor: pointer;
+  border: none;
+  outline: none;
   background-color: var(--Neon-Green);
   border-radius: 50%;
   padding: 20px;
   transform: translateY(30px);
+
+  visibility: hidden;
+}
+
+.advice-button.visible {
+  visibility: visible;
 }
 
 .advice-button:hover {
@@ -103,4 +161,23 @@ img {
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+  position: fixed;
+  bottom: 0.325rem;
+  width: 100%;
+}
+
+.attribution a {
+  color: var(--Neon-Green);
+}
+
+@media (max-width: 375px) {
+  .attribution {
+    font-size: 0.55rem;
+  }
 }

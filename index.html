@@ -8,13 +8,13 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <title>Advice generator app</title>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <main>
@@ -22,18 +22,29 @@
         <span id="advice-id"></span>
         <p id="advice-text"></p>
       </div>
+      <div class="loader" role="alert" aria-live="assertive"></div>
       <picture>
         <source
           media="(min-width: 375px)"
-          srcset="images/pattern-divider-desktop.svg"
+          srcset="./assets/images/pattern-divider-desktop.svg"
         />
-        <img src="images/pattern-divider-mobile.svg" alt="pattern-divider" />
+        <img
+          src="./assets/images/pattern-divider-mobile.svg"
+          alt
+          aria-hidden="true"
+        />
       </picture>
-      <div class="advice-button">
-        <img src="images/icon-dice.svg" alt="icon-dice" />
-      </div>
+      <button class="advice-button" aria-label="Generate new advice">
+        <img src="./assets/images/icon-dice.svg" alt aria-hidden="true" />
+      </button>
     </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/wallacycaike">Wachiles</a>.
+    </footer>
 
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
