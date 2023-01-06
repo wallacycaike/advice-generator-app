@@ -52,14 +52,10 @@ See a part of the code where I made the request to the API:
 
 ```js
 async function getAdvice() {
-  showLoadingMessage();
-  avoidSpam();
-
   const url = "https://api.adviceslip.com/advice";
   const response = await fetch(url);
-  const adviceSlip = await response.json();
-
-  showAdvice(adviceSlip.slip);
+  const advice = await response.json();
+  return advice.slip;
 }
 ```
 
